@@ -1,9 +1,11 @@
 import { GoPeople } from "react-icons/go";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineRequestPage } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const ReadBooksCard = ({ book }) => {
   const {
+    bookId,
     bookName,
     author,
     image,
@@ -63,17 +65,17 @@ const ReadBooksCard = ({ book }) => {
         <div className="divider my-2 w-full"></div>
 
         <div className="flex flex-col lg:flex-row gap-4 font-medium text-sm">
-          <button className="px-4 py-1 bg-[#328EFF26] text-[#328EFF] rounded-full">
+          <button className="px-4 py-1 hover:opacity-70 bg-[#328EFF26] text-[#328EFF] rounded-full">
             Category: {category}
           </button>
 
-          <button className="px-4 py-1 bg-[#FFAC3326] text-[#FFAC33] rounded-full">
+          <button className="px-4 py-1 hover:opacity-70 bg-[#FFAC3326] text-[#FFAC33] rounded-full">
             Rating: {rating}
           </button>
 
-          <button className="px-4 py-1 bg-[#23BE0A] text-white rounded-full">
+          <Link to={`/book-details/${bookId}`} className="px-4 py-1 hover:opacity-70 bg-[#23BE0A] text-white rounded-full">
             View Details
-          </button>
+          </Link>
         </div>
       </div>
     </div>

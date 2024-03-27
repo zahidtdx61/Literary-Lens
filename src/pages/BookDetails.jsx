@@ -29,7 +29,7 @@ const BookDetails = () => {
   };
 
   return (
-    <div className="w-[90%] mx-auto lg:w-full grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <div className="w-[90%] mx-auto mb-2 lg:w-full grid grid-cols-1 lg:grid-cols-2 gap-4">
       <div className="w-full mt-4 lg:h-[calc(100vh-120px)] bg-zinc-200 p-4 rounded-lg">
         <img
           src={image}

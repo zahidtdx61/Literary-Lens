@@ -1,5 +1,5 @@
 import { MdMenuOpen } from "react-icons/md";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const navStlye = (isActive) => {
@@ -52,7 +52,7 @@ const Navbar = () => {
             </NavLink>
           </ul>
         </div>
-        <button className="text-xl md:text-3xl font-bold">Literary Lens</button>
+        <Link to={"/"} className="text-xl md:text-3xl font-bold">Literary Lens</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 flex items-center gap-6">
