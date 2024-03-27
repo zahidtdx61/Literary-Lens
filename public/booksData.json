@@ -21,7 +21,7 @@
     "totalPages": 281,
     "rating": 4.5,
     "category": "Fiction",
-    "tags": ["Social Issues", "Coming of Age", "Southern Gothic"],
+    "tags": ["Social Issues", "Coming of Age"],
     "publisher": "J. B. Lippincott & Co.",
     "yearOfPublishing": 1960
   },
@@ -34,7 +34,7 @@
     "totalPages": 328,
     "rating": 4.4,
     "category": "Fiction",
-    "tags": ["Dystopian", "Political Satire", "Philosophical"],
+    "tags": ["Political Satire", "Philosophical"],
     "publisher": "Secker & Warburg",
     "yearOfPublishing": 1949
   },
@@ -47,7 +47,7 @@
     "totalPages": 277,
     "rating": 4.1,
     "category": "Fiction",
-    "tags": ["Coming of Age", "Alienation", "Cultural Critique"],
+    "tags": ["Alienation", "Cultural Critique"],
     "publisher": "Little, Brown and Company",
     "yearOfPublishing": 1951
   },
@@ -60,7 +60,7 @@
     "totalPages": 279,
     "rating": 4.3,
     "category": "Fiction",
-    "tags": ["Romance", "Social Commentary", "Satire"],
+    "tags": ["Romance", "Satire"],
     "publisher": "T. Egerton, Whitehall",
     "yearOfPublishing": 1813
   },
@@ -128,5 +128,31 @@
     "tags": ["Magic", "Adventure", "Wizardry"],
     "publisher": "Bloomsbury Publishing (UK)",
     "yearOfPublishing": 1997
+  },
+  {
+    "bookId": "011",
+    "bookName": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "image": "https://m.media-amazon.com/images/I/71+whvJjE3L._SL1500_.jpg",
+    "review": "The Night Circus by Erin Morgenstern is a captivating tale of magic, love, and intrigue set in a mysterious circus that appears without warning and is only open at night. Within its black and white tents, visitors are enchanted by extraordinary performances and enchanted wonders, unaware of the fierce competition brewing between two young illusionists, Celia and Marco, who are bound by a dangerous game orchestrated by their mentors. As their rivalry intensifies, so does their forbidden love, threatening to unravel the very fabric of the circus itself. Morgenstern's lyrical prose and imaginative storytelling create a mesmerizing world that will leave readers spellbound.",
+    "totalPages": 387,
+    "rating": 4.4,
+    "category": "Fantasy",
+    "tags": ["Magic", "Romance", "Mystery"],
+    "publisher": "Doubleday",
+    "yearOfPublishing": 2011
+  },
+  {
+    "bookId": "012",
+    "bookName": "Educated",
+    "author": "Tara Westover",
+    "image": "https://m.media-amazon.com/images/I/71KCV+h6tzL._SL1500_.jpg",
+    "review": "Educated by Tara Westover is a powerful memoir that recounts the author's journey from growing up in a strict and isolated household in rural Idaho to pursuing higher education against all odds. Despite never attending school, Westover's thirst for knowledge leads her to teach herself and eventually gain admission to prestigious universities. Along the way, she grapples with the complexities of family loyalty, identity, and the pursuit of truth. Through her resilience and determination, Westover sheds light on the transformative power of education and the importance of forging one's own path. Educated is an inspiring story of self-discovery and triumph over adversity.",
+    "totalPages": 334,
+    "rating": 4.6,
+    "category": "Memoir",
+    "tags": ["Education", "Family", "Self-Discovery"],
+    "publisher": "Random House",
+    "yearOfPublishing": 2018
   }
 ]

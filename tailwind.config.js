@@ -6,6 +6,7 @@ export default {
       colors: {
         "primary-green": "#23BE0A",
         "light-ash": "#131313CC",
+        "light-border": '#13131326',
         "secondary-sky": "#59C6D2",
       },
     },
