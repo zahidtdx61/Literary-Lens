@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="w-full md:w-[90%] mx-auto">
       <Navbar />
     </div>
   );
