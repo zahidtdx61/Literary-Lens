@@ -1,7 +1,6 @@
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
-
   return (
     <div className="hero min-h-fit bg-base-200 rounded-md overflow-hidden">
       <div className="hero-content w-full flex-col lg:flex-row-reverse">
@@ -17,7 +16,7 @@ const Banner = () => {
             Books to freshen up your bookshelf
           </h1>
 
-          <Link to={'/listed-books'}>
+          <Link to={"/listed-books"}>
             <button className="btn text-white bg-primary-green">
               View The List
             </button>

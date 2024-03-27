@@ -8,7 +8,7 @@ const BooksSection = ({ booksData }) => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full md:w-[90%] xl:w-[1220px] mx-auto">
         {booksData.map((book) => {
-          return <BooksCard key={book.id} book={book} />;
+          return <BooksCard key={book.bookId} book={book} />;
         })}
       </div>
     </div>
