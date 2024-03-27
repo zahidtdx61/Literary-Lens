@@ -4,7 +4,6 @@ import ReadBooksCard from "./ReadBooksCard";
 const WishlistBooks = () => {
   const books = useLoaderData();
 
-  console.log(books);
   if (!books) return <></>;
 
   return (
