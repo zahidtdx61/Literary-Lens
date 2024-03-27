@@ -32,7 +32,7 @@ const BookDetails = () => {
 
   return (
     <div className="w-[90%] mx-auto mb-2 lg:w-full grid grid-cols-1 lg:grid-cols-2 gap-4">
-      <div className="w-full mt-4 lg:h-[calc(100vh-120px)] bg-zinc-200 p-4 rounded-lg">
+      <div className="w-full mt-4 h-[400px] lg:h-[calc(100vh-120px)] bg-zinc-200 p-4 rounded-lg">
         <img
           src={image}
           className="w-full h-full object-contain mx-auto object-center"
@@ -58,7 +58,7 @@ const BookDetails = () => {
 
         <div className="mt-4 flex items-center gap-2">
           <p className="font-bold text-[#131313] text-xl">Tag</p>
-          <div className="my-4 flex gap-2">
+          <div className="my-4 flex gap-2 text-center">
             {tags.map((tag) => (
               <span
                 key={tag}

@@ -32,24 +32,24 @@ const ReadBooksCard = ({ book }) => {
           By : {author}
         </h3>
 
-        <div className="mt-2 w-full flex flex-col lg:flex-row lg:items-center  gap-4">
-          <div className=" flex items-center gap-2">
-            <div className="font-bold text-[#131313]">Tag</div>
-            <div className="mt-2 flex gap-2 items-center">
+        <div className="mt-2 w-full flex flex-col lg:flex-row gap-x-4 items-start lg:items-center justify-center lg:justify-start">
+          <div className="flex w-fit items-center gap-x-2">
+            <h1 className="font-bold w-fit text-[#131313]">Tag</h1>
+            <div className="mt-2 w-fit flex gap-x-2">
               {tags.map((tag) => (
-                <div
+                <button
                   key={tag}
-                  className="bg-base-200 text-primary-green rounded-full py-1 px-3 text-sm font-medium"
+                  className="bg-base-200 w-fit text-primary-green text-center rounded-full px-3 py-1 text-sm font-medium"
                 >
-                  #{tag}
-                </div>
+                  # {tag}
+                </button>
               ))}
             </div>
           </div>
 
-          <div className="flex gap-1 items-center text-sm text-[#131313CC]">
-            <IoLocationOutline size={20} />
-            <p>Year of Publishing: {yearOfPublishing}</p>
+          <div className="flex w-fit items-center gap-x-0 text-sm text-[#131313CC]">
+            <IoLocationOutline size={30} />
+            <p className="w-fit">Year of Publishing: {yearOfPublishing}</p>
           </div>
         </div>
 
@@ -64,16 +64,19 @@ const ReadBooksCard = ({ book }) => {
 
         <div className="divider my-2 w-full"></div>
 
-        <div className="flex flex-col lg:flex-row gap-4 text-center font-medium text-sm">
-          <button className="px-4 py-1 hover:opacity-70 bg-[#328EFF26] text-[#328EFF] rounded-full">
+        <div className="flex flex-wrap justify-center lg:justify-start gap-4 text-center font-medium text-sm">
+          <button className="px-4 py-1 w-fit hover:opacity-70 bg-[#328EFF26] text-[#328EFF] rounded-full">
             Category: {category}
           </button>
 
-          <button className="px-4 py-1 hover:opacity-70 bg-[#FFAC3326] text-[#FFAC33] rounded-full">
+          <button className="px-4 py-1 w-fit hover:opacity-70 bg-[#FFAC3326] text-[#FFAC33] rounded-full">
             Rating: {rating}
           </button>
 
-          <Link to={`/book-details/${bookId}`} className="px-4 py-1 hover:opacity-70 bg-[#23BE0A] text-white rounded-full">
+          <Link
+            to={`/book-details/${bookId}`}
+            className="px-4 py-1  w-fit hover:opacity-70 bg-[#23BE0A] text-white rounded-full"
+          >
             View Details
           </Link>
         </div>
