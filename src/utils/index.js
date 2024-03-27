@@ -5,7 +5,8 @@ export const addToLocalStorage = (key, value) => {
 };
 
 export const getFromLocalStorage = (key) => {
-  return localStorage.getItem(key);
+  const data = localStorage.getItem(key);
+  return JSON.parse(data);
 };
 
 export const removeFromLocalStorage = (key) => {
@@ -19,7 +20,7 @@ export const clearFromLocalStorage = () => {
 export const saveToLocalStorage = (key, value) => {
   let data = localStorage.getItem(key);
   data = JSON.parse(data);
-  
+
   if (data) {
     const alreadyAdded = data.find((item) => item.bookId === value.bookId);
     if (!alreadyAdded) {
