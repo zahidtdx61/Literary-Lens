@@ -64,7 +64,7 @@ const ReadBooksCard = ({ book }) => {
 
         <div className="divider my-2 w-full"></div>
 
-        <div className="flex flex-col lg:flex-row gap-4 font-medium text-sm">
+        <div className="flex flex-col lg:flex-row gap-4 text-center font-medium text-sm">
           <button className="px-4 py-1 hover:opacity-70 bg-[#328EFF26] text-[#328EFF] rounded-full">
             Category: {category}
           </button>
