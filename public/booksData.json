@@ -73,7 +73,7 @@
     "totalPages": 623,
     "rating": 4.0,
     "category": "Fiction",
-    "tags": ["Adventure", "Symbolism", "Whaling"],
+    "tags": ["Adventure", "Symbolism"],
     "publisher": "Richard Bentley (UK); Harper & Brothers (US)",
     "yearOfPublishing": 1851
   },
@@ -99,7 +99,7 @@
     "totalPages": 197,
     "rating": 4.2,
     "category": "Fiction",
-    "tags": ["Philosophical", "Spiritual", "Journey"],
+    "tags": ["Philosophical", "Journey"],
     "publisher": "HarperCollins",
     "yearOfPublishing": 1988
   },
@@ -151,7 +151,7 @@
     "totalPages": 334,
     "rating": 4.6,
     "category": "Memoir",
-    "tags": ["Education", "Family", "Self-Discovery"],
+    "tags": ["Education", "Family"],
     "publisher": "Random House",
     "yearOfPublishing": 2018
   }

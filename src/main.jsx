@@ -5,11 +5,14 @@ import "./index.css";
 import MainLayout from "./MainLayout/MainLayout";
 import Home from "./pages/Home";
 import ListedBooks from "./pages/ListedBooks";
+import BookDetails from "./pages/BookDetails";
+import Error from "./pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <Error/>,
     children: [
       {
         path: "/",
@@ -19,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/listed-books",
         element: <ListedBooks />,
+      },
+      {
+        path: "/book-details/:bookId",
+        element: <BookDetails />,
       },
       {
         path: "/page-to-read",
