@@ -1,10 +1,12 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import BooksInfo from "../components/BooksInfo";
 import { addToRead, addToWishlist } from "../utils";
 
 const BookDetails = () => {
-  const book = useLoaderData();
-
+  const { bookId } = useParams();
+  const books = useLoaderData();
+  const book = books.find((book) => book.bookId === bookId);
+  console.log(book);
   const {
     bookName,
     author,
