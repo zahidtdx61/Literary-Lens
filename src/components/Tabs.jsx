@@ -9,7 +9,7 @@ const Tabs = () => {
       <Link
         to={""}
         onClick={() => setTabIndex(0)}
-        className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 border-b ${
+        className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 rounded-lg ${
           tabIndex === 0 ? "border border-b-0" : "border-b"
         }`}
       >
@@ -19,7 +19,7 @@ const Tabs = () => {
       <Link
         to={"wishlist"}
         onClick={() => setTabIndex(1)}
-        className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 border-b ${
+        className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 rounded-lg ${
           tabIndex === 1 ? "border border-b-0" : "border-b"
         }`}
       >
