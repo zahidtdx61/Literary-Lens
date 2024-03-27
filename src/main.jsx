@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Toaster } from "react-hot-toast";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ReadBooks from "./components/ReadBooks";
+import WishlistBooks from "./components/WishlistBooks";
 import "./index.css";
 import MainLayout from "./MainLayout/MainLayout";
 import BookDetails from "./pages/BookDetails";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 import ListedBooks from "./pages/ListedBooks";
-import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,16 @@ const router = createBrowserRouter([
       {
         path: "/listed-books",
         element: <ListedBooks />,
+        children: [
+          {
+            index: true,
+            element: <ReadBooks />,
+          },
+          {
+            path: "wishlist",
+            element: <WishlistBooks />,
+          },
+        ],
       },
       {
         path: "/book-details/:bookId",
