@@ -3,21 +3,21 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import MainLayout from "./MainLayout/MainLayout";
-import Home from "./pages/Home";
-import ListedBooks from "./pages/ListedBooks";
 import BookDetails from "./pages/BookDetails";
 import Error from "./pages/Error";
+import Home from "./pages/Home";
+import ListedBooks from "./pages/ListedBooks";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    errorElement: <Error/>,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch('/booksData.json'),
+        loader: () => fetch("/booksData.json"),
       },
       {
         path: "/listed-books",
@@ -26,6 +26,12 @@ const router = createBrowserRouter([
       {
         path: "/book-details/:bookId",
         element: <BookDetails />,
+        loader: async ({ params }) => {
+          const resp = await fetch("/booksData.json");
+          const books = await resp.json();
+          const book = books.find((book) => book.bookId === params.bookId);
+          return book;
+        },
       },
       {
         path: "/page-to-read",
