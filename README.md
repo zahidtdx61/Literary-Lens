@@ -1,6 +1,5 @@
 # Literary Lens
 
-Live link: [Literary Lens](https://literary-lens.vercel.app/)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fliterary-lens.vercel.app%2F)](https://literary-lens.vercel.app/)
 
 Welcome to Literary Lens, a website where you can explore and discover details about various books. Literary Lens offers a range of features to enhance your reading experience.
