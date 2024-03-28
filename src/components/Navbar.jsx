@@ -50,6 +50,12 @@ const Navbar = () => {
             >
               Page to Read
             </NavLink>
+            <NavLink
+              to={"/contact"}
+              className={({ isActive }) => navStlyeSM(isActive)}
+            >
+              Contact
+            </NavLink>
           </ul>
         </div>
         <Link to={"/"} className="text-xl md:text-3xl font-bold">
@@ -72,6 +78,12 @@ const Navbar = () => {
             className={({ isActive }) => navStlye(isActive)}
           >
             Page to Read
+          </NavLink>
+          <NavLink
+            to={"/contact"}
+            className={({ isActive }) => navStlye(isActive)}
+          >
+            Contact
           </NavLink>
         </ul>
       </div>

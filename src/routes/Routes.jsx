@@ -8,6 +8,7 @@ import Home from "../pages/Home";
 import ListedBooks from "../pages/ListedBooks";
 import PagesToRead from "../pages/PagesToRead";
 import { getFromLocalStorage } from "../utils";
+import Contact from "../pages/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
       {
         path: "/page-to-read",
         element: <PagesToRead />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
