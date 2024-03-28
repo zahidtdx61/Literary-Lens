@@ -6,6 +6,7 @@ export const addToLocalStorage = (key, value) => {
 
 export const getFromLocalStorage = (key) => {
   const data = localStorage.getItem(key);
+  if(!data) return null;
   return JSON.parse(data);
 };
 
