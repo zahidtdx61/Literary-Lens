@@ -8,10 +8,14 @@ const MainLayout = () => {
   if (navigation.state === "loading") return <Loader />;
 
   return (
-    <div className="w-full md:w-[90%] mx-auto">
-      <Navbar />
-      <Outlet />
-    </div>
+    <>
+      <div className="w-screen h-16">
+        <Navbar />
+      </div>
+      <div className="w-full md:w-[90%] mx-auto">
+        <Outlet />
+      </div>
+    </>
   );
 };
 

@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar flex items-center">
+    <div className="navbar p-2 lg:px-16 flex items-center justify-center shadow-lg fixed bg-white">
       <div className="navbar-start">
         <div className="dropdown">
           <button tabIndex={0} role="button" className="lg:hidden mr-2">
@@ -52,7 +52,9 @@ const Navbar = () => {
             </NavLink>
           </ul>
         </div>
-        <Link to={"/"} className="text-xl md:text-3xl font-bold">Literary Lens</Link>
+        <Link to={"/"} className="text-xl md:text-3xl font-bold">
+          Literary Lens
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 flex items-center gap-6">
