@@ -9,7 +9,7 @@ const MainLayout = () => {
 
   return (
     <>
-      <div className="w-screen h-16">
+      <div className="w-full h-16">
         <Navbar />
       </div>
       <div className="w-full md:w-[90%] mx-auto">
