@@ -9,6 +9,7 @@ import ListedBooks from "../pages/ListedBooks";
 import PagesToRead from "../pages/PagesToRead";
 import { getFromLocalStorage } from "../utils";
 import Contact from "../pages/Contact";
+import About from "../pages/About";
 
 export const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },

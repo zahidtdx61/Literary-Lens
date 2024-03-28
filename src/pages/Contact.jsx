@@ -51,6 +51,7 @@ const Contact = () => {
           ></textarea>
         </div>
         <Link
+          to={"/"}
           type="submit"
           className="w-full text-center p-3 text-sm font-bold tracking-wide uppercase rounded bg-primary-green text-white hover:opacity-70"
         >
