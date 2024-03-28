@@ -10,26 +10,26 @@ import {
 
 const Chart = ({ data }) => {
   const colors = [
-    "#FF0000", // Red
-    "#00FF00", // Lime
-    "#0000FF", // Blue
-    "#FFFF00", // Yellow
-    "#FF00FF", // Magenta
-    "#00FFFF", // Cyan
-    "#800000", // Maroon
-    "#008000", // Green
-    "#000080", // Navy
-    "#808000", // Olive
-    "#800080", // Purple
-    "#008080", // Teal
-    "#C0C0C0", // Silver
-    "#808080", // Gray
-    "#FFA500", // Orange
-    "#800000", // Dark Red
-    "#008000", // Dark Green
-    "#000080", // Dark Blue
-    "#FF00FF", // Fuchsia
-    "#008080", // Aqua
+    "#00FF00",
+    "#0000FF",
+    "#FFFF00",
+    "#FF00FF",
+    "#FF0000",
+    "#00FFFF",
+    "#800000",
+    "#008000",
+    "#000080",
+    "#808000",
+    "#800080",
+    "#008080",
+    "#C0C0C0",
+    "#808080",
+    "#FFA500",
+    "#800000",
+    "#008000",
+    "#000080",
+    "#FF00FF",
+    "#008080",
   ];
 
   const getPath = (x, y, width, height) =>
@@ -59,7 +59,7 @@ const Chart = ({ data }) => {
         backgroundColor: "zinc",
       }}
     >
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height="100%" className={"z-[1]"}>
         <BarChart data={data} margin={{ top: 40, bottom: 80 }}>
           <CartesianGrid strokeDasharray={"3 3"} />
           <YAxis />
